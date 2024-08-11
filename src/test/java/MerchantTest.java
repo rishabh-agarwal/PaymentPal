@@ -1,12 +1,15 @@
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class MerchantTest {
     Merchant merchant;
     Card card;
 
-    @BeforeEach
+    @Before
     public void setupMerchant() {
         merchant = new Merchant();
     }
